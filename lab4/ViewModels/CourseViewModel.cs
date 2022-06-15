@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 
 namespace lab4.ViewModels
 {
@@ -21,7 +22,7 @@ namespace lab4.ViewModels
         public IEnumerable<Category> Categories{ get; set; }
         public DateTime GetDateTime()
         {
-            return DateTime.Parse(string.Format("{0} {1}",Date,Time));
+            return DateTime.Parse(String.Format("{0} {1}",Date,Time));
 
         }
     }
