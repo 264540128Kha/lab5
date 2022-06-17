@@ -38,4 +38,24 @@ textarea {
 .navbar-inverse .navbar-brand{
     color:#00ffff;
 }
+/**/
+.course{
+    list-style:none;
+}
+.course >li{
+    position:relative;
+    margin-bottom:30px;
+}
+.course >li .date{
+    text-align:center;
+    background-color:#4cff00;
+    color:blueviolet;
+    width:60px;
+    border-radius:8px;
 
+}
+.course >li .details{
+    position:absolute;
+    top:0;
+    left:70px;
+}

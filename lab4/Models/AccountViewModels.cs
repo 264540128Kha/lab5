@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-
+using System.Data.Entity;
 namespace lab4.Models
 {
     public class ExternalLoginConfirmationViewModel
@@ -79,6 +79,9 @@ namespace lab4.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+        [Required]
+        [StringLength(255)]
+        public string Name { get; set; }
     }
 
     public class ResetPasswordViewModel
@@ -109,4 +112,5 @@ namespace lab4.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
     }
+  
 }
